@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">EduClub</string>
+    <string name="login_fragment_login_editText_hint">Login</string>
+    <string name="login_fragment_password_editText_hint">Password</string>
+    <string name="login_fragment_sigIn_Button">Sign In</string>
+    <string name="register_fragment_register_Button">Registr</string>
+    <string name="register_fragment_saveme_Checkbox">Save me</string>
+    <string name="login_fragment_forgot_Textview">Forgot Password ?</string>
+    <string name="login_fragment_register_Textview">Register</string>
+    <string name="login_fragment_saveme_Checkbox">Save me</string>
+    <string name="register_fragment_login_edittext_hint">Login</string>
+    <string name="register_fragment_password_edittext_hint">Password</string>
+    <string name="register_fragment_fio_edittext_hint">FIO</string>
+    <string name="register_fragment_phone_edittext_hint">Phone</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+    <string name="SIGN_IN"><u>SIGN IN</u></string>
+    <string name="login_error"><u>Login is empty</u></string>
+    <string name="password_error"><u>Password is empty</u></string>
+    <string name="fio_empty_error"><u>FIO is empty</u></string>
+    <string name="phone_empty_error"><u>Phone is empty</u></string>
+    <string name="forgot_fragment"><u>This a forgot fragment</u></string>
+
+
+    <string name="group_title1_navigation_menu_item">Title 1</string>
+    <string name="all_groups_navigation_menu_item">All groups</string>
+    <string name="joined_groups_navigation_menu_item">My groups</string>
+    <string name="courses_navigation_menu_item">Courses</string>
+    <string name="companies_navigation_menu_item">Companies</string>
+    <string name="group_title2_navigation_menu_item">Title 2</string>
+    <string name="chat_navigation_menu_item">Chat</string>
+    <string name="alert_navigation_menu_item">Alert</string>
+    <string name="advertising_navigation_menu_item">Advertising</string>
+    <string name="settings_navigation_menu_item">Settings</string>
+    <string name="tab1_title">COMPANY</string>
+    <string name="tab2_title">GROUP</string>
+    <string name="tab3_title">INSTRUCTION</string>
+</resources>

@@ -1,0 +1,288 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    android:layout_margin="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/name_group"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:text="Tarix"
+                android:textSize="@dimen/group_body_size"
+                android:layout_margin="@dimen/tab2_controls_margin"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/type_group"
+                android:text="Boshlang'ich"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:textSize="@dimen/group_body_size"
+                android:layout_margin="@dimen/tab2_controls_margin"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:background="@drawable/separator"
+            android:layout_height="3dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/category_group"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:text="Category"
+                android:textSize="@dimen/group_body_size"
+                android:layout_margin="@dimen/tab2_controls_margin"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/subcategory_group"
+                android:text="SubCategory"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:textSize="@dimen/group_body_size"
+                android:layout_margin="@dimen/tab2_controls_margin"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <View
+            android:layout_width="wrap_content"
+            android:background="@drawable/separator"
+            android:layout_height="3dp" />
+
+
+        <at.blogc.android.views.ExpandableTextView
+            android:id="@+id/desc_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="If set, the text view will include its current complete text
+             inside of its frozen icicle in addition to meta-data such as
+             the current cursor position.  By default this is disabled;
+             it can be useful when the contents of a text view is not stored
+             in a persistent place such as a content provider. For
+             {@link android.widget.EditText} it is always enabled, regardless
+             of the value of the attribute."
+            android:maxLines="2"
+            android:ellipsize="end"
+            app:animation_duration="750"
+            android:textSize="@dimen/group_body_size"
+            android:drawableLeft="@drawable/ic_description_black_24dp"
+            android:drawablePadding="@dimen/tab2_controls_padding"
+            android:layout_margin="@dimen/tab2_controls_margin"
+            android:drawableStart="@drawable/ic_description_black_24dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal"
+            android:id="@+id/tegRV_group"
+            android:layout_margin="@dimen/tab2_controls_margin"
+            />
+
+        <TextView
+            android:id="@+id/addressTV_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_location_on_black_24dp"
+            android:drawableLeft="@drawable/ic_location_on_black_24dp"
+            android:text="Address"
+            android:textSize="@dimen/group_body_size"
+            android:drawablePadding="@dimen/tab2_controls_padding"
+            android:layout_margin="@dimen/tab2_controls_margin"
+            />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:id="@+id/startTimeTV_group"
+                    android:text="09:00"
+                    android:textSize="@dimen/group_body_size"
+                    android:drawableLeft="@drawable/ic_access_time_black_24dp"
+                    android:drawablePadding="@dimen/tab2_controls_padding"
+                    android:layout_margin="@dimen/tab2_controls_margin"
+                    android:drawableStart="@drawable/ic_access_time_black_24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:id="@+id/endTimeTV_group"
+                    android:text="11:00"
+                    android:textSize="@dimen/group_body_size"
+                    android:layout_margin="@dimen/tab2_controls_margin"
+                    />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/startTimeTV_group"
+                    android:layout_margin="@dimen/tab2_controls_margin"
+                    >
+
+                    <TextView
+                        android:layout_width="@dimen/weekday_width_height"
+                        android:layout_height="@dimen/weekday_width_height"
+                        android:background="@drawable/bg_silver"
+                        android:text="M"
+                        android:id="@+id/mondayTV"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_margin="@dimen/weekday_margin"
+                        android:textSize="@dimen/group_body_size"
+                        android:textAlignment="center"
+
+                        />
+                    <TextView
+                        android:layout_width="@dimen/weekday_width_height"
+                        android:layout_height="@dimen/weekday_width_height"
+                        android:background="@drawable/bg_silver"
+                        android:text="T"
+                        android:layout_margin="@dimen/weekday_margin"
+                        android:id="@+id/tuesdayTV"
+                        app:layout_constraintLeft_toRightOf="@id/mondayTV"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:textSize="@dimen/group_body_size"
+                        android:textAlignment="center"
+
+                        />
+                    <TextView
+                        android:layout_width="@dimen/weekday_width_height"
+                        android:layout_height="@dimen/weekday_width_height"
+                        android:background="@drawable/bg_silver"
+                        android:text="W"
+                        android:layout_margin="@dimen/weekday_margin"
+                        android:id="@+id/wednesdayTV"
+                        app:layout_constraintLeft_toRightOf="@id/tuesdayTV"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:textSize="@dimen/group_body_size"
+                        android:textAlignment="center"
+                        />
+                    <TextView
+                        android:layout_width="@dimen/weekday_width_height"
+                        android:layout_height="@dimen/weekday_width_height"
+                        android:background="@drawable/bg_silver"
+                        android:text="T"
+                        android:layout_margin="@dimen/weekday_margin"
+                        android:id="@+id/thursdayTV"
+                        app:layout_constraintLeft_toRightOf="@id/wednesdayTV"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:textSize="@dimen/group_body_size"
+                        android:textAlignment="center"
+                        />
+                    <TextView
+                        android:layout_width="@dimen/weekday_width_height"
+                        android:layout_height="@dimen/weekday_width_height"
+                        android:background="@drawable/bg_silver"
+                        android:text="F"
+                        android:layout_margin="@dimen/weekday_margin"
+                        android:id="@+id/fridayTV"
+                        app:layout_constraintLeft_toRightOf="@id/thursdayTV"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:textSize="@dimen/group_body_size"
+                        android:textAlignment="center"
+                        />
+                    <TextView
+                        android:layout_width="@dimen/weekday_width_height"
+                        android:layout_height="@dimen/weekday_width_height"
+                        android:background="@drawable/bg_silver"
+                        android:text="S"
+                        android:layout_margin="@dimen/weekday_margin"
+                        android:id="@+id/saturdayTV"
+                        app:layout_constraintLeft_toRightOf="@id/fridayTV"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:textSize="@dimen/group_body_size"
+                        android:textAlignment="center"
+                        />
+                    <TextView
+                        android:layout_width="@dimen/weekday_width_height"
+                        android:layout_height="@dimen/weekday_width_height"
+                        android:background="@drawable/bg_silver"
+                        android:text="S"
+                        android:layout_margin="@dimen/weekday_margin"
+                        android:id="@+id/sundayTV"
+                        app:layout_constraintLeft_toRightOf="@id/saturdayTV"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:textSize="@dimen/group_body_size"
+                        android:textAlignment="center"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:id="@+id/joinIV_group"
+                android:src="@drawable/ic_add_black_24dp"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

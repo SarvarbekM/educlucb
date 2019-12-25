@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="colorPrimary">#008577</color>-->
+    <color name="colorPrimary">#4FD2C2</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+<!--    <color name="colorPrimaryDark">#4FD2C2</color>-->
+    <color name="colorAccent">#D81B60</color>
+    <color name="login_fragment_fon1">#FFFFFF</color>
+    <color name="login_fragment_fon2">#DAE2D4</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="signInButton">#4FD2C2</color>
+    <color name="test_desc_company">#2BA2DD</color>
+    <color name="tablayout_text_color">#FFFFFF</color>
+    <color name="tablayout_text_select_color">#ECE0E0</color>
+    <color name="register_edittext_hint_color">#7F838A</color>
+
+
+</resources>

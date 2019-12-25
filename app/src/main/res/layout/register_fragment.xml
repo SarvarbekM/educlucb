@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_fragment_fon">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/loginET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:hint="@string/register_fragment_login_edittext_hint"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColorHint="@color/register_edittext_hint_color"
+                android:textSize="@dimen/register_fragment_editText_textsize" />
+            <!--                android:layout_margin="5dp"-->
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/passwordET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:hint="@string/register_fragment_password_edittext_hint"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColorHint="@color/register_edittext_hint_color"
+                android:textSize="@dimen/register_fragment_editText_textsize" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/fioET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:hint="@string/register_fragment_fio_edittext_hint"
+                android:inputType="text"
+                android:singleLine="false"
+                android:textColorHint="@color/register_edittext_hint_color"
+                android:textSize="@dimen/register_fragment_editText_textsize" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+
+            <com.github.pinball83.maskededittext.MaskedEditText
+                android:id="@+id/phoneET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:inputType="number"
+                android:textSize="@dimen/register_fragment_editText_textsize"
+                app:mask="+998 (**) *** ** **"
+                app:notMaskedSymbol="*" />
+
+            <!--            <EditText-->
+            <!--                android:id="@+id/phoneET"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="25dp"-->
+            <!--                android:layout_marginRight="25dp"-->
+            <!--                android:textColorHint="@color/register_edittext_hint_color"-->
+            <!--                android:hint="@string/register_fragment_phone_edittext_hint"-->
+            <!--                android:inputType="phone"-->
+            <!--                android:singleLine="true"-->
+            <!--                android:textSize="@dimen/register_fragment_editText_textsize" />-->
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+
+            <Button
+                android:id="@+id/registrBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/shape_file"
+                android:text="@string/register_fragment_register_Button"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+
+                />
+
+            <CheckBox
+                android:id="@+id/savemeCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="30dp"
+
+                android:text="@string/register_fragment_saveme_Checkbox"
+                android:textColor="@color/register_edittext_hint_color"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toTopOf="@id/registrBTN"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginStart="25dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "856296906011",
+    "firebase_url": "https://educlub-dba7c.firebaseio.com",
+    "project_id": "educlub-dba7c",
+    "storage_bucket": "educlub-dba7c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:856296906011:android:6da748479600b242f247be",
+        "android_client_info": {
+          "package_name": "com.example.educlub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "856296906011-1mpukh29vfvc5e74f6c15unlc5djrads.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.educlub",
+            "certificate_hash": "75fc29061c97f301da54cc86ee196393c1388503"
+          }
+        },
+        {
+          "client_id": "856296906011-sdr9e6maht76het4nqjummnjv02gcc5c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrkHbNQ_Le0iMhIvL37qU_W0MZk88WHZg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "856296906011-sdr9e6maht76het4nqjummnjv02gcc5c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

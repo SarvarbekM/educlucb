@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/en"
+            android:icon="@mipmap/en_icon"
+            android:title="lan" />
+
+        <item
+            android:id="@+id/ru"
+            android:icon="@mipmap/ru_icon"
+            android:title="lan"/>
+
+        <item
+            android:id="@+id/uz"
+            android:icon="@mipmap/uz_icon"
+            android:title="lan"/>
+    </group>
+
+</menu>

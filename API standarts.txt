@@ -1,0 +1,41 @@
+1) Registratsiya (ok,error)
+2) Join exist group (ok,error)
+3) Create group (ok,error)
+4) Forgot request (ok,error)
+5) Leave group (ok,error)
+6) SignIn (ok,error)
+
+
+
+
+
+Hozircha topgan holatlarimni yozib chiqdim, yuqoridagi
+holatlarda yoki ok yoki error xabar qaytishi mumkin, 
+Agar ok holat qaytsa har bir requestga mos shakldahi json,
+agar error holat qaytsa hammasida bir xil error qaytishi kerak.
+
+
+
+"name":"kdjfnfkdj",
+"message":"dfvfjfd",
+"code":0,
+"status":422,
+"type":"yii\web\HttpException"
+
+
+"login":"Error"
+
+"Phone":"Error"
+
+"Leave":"Error"
+
+
+
+
+Menu
+1) Group list
+2) Cource list
+3) Reklama
+4) Uchebniy sentr list
+5) Chat
+6) Settings

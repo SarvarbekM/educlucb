@@ -1,0 +1,12 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <gradient
+                android:angle="270"
+                android:centerColor="@color/login_fragment_fon2"
+                android:endColor="@color/login_fragment_fon1"
+                android:startColor="@color/login_fragment_fon1"
+                android:type="linear" />
+        </shape>
+    </item>
+</layer-list>

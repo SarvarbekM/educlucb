@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <item android:title="@string/group_title1_navigation_menu_item">
+        <menu>
+            <item
+                android:id="@+id/allGroupMI"
+                android:icon="@drawable/ic_group_black_24dp"
+                android:title="@string/all_groups_navigation_menu_item"
+                app:actionViewClass="android.widget.TextView" />
+            <item
+                android:id="@+id/joinedGroupMI"
+                android:icon="@drawable/ic_group_add_black_24dp"
+                android:title="@string/joined_groups_navigation_menu_item"
+                app:actionViewClass="android.widget.TextView" />
+            <item
+                android:id="@+id/courseMI"
+                android:icon="@drawable/ic_assignment_turned_in_black_24dp"
+                android:title="@string/courses_navigation_menu_item" />
+
+            <item
+                android:id="@+id/companyMI"
+                android:icon="@drawable/ic_view_compact_black_24dp"
+                android:title="@string/companies_navigation_menu_item" />
+        </menu>
+
+    </item>
+
+    <item android:title="@string/group_title2_navigation_menu_item">
+        <menu>
+            <item
+                android:id="@+id/chatMI"
+                android:icon="@drawable/ic_chat_black_24dp"
+                android:title="@string/chat_navigation_menu_item" />
+
+            <item
+                android:id="@+id/alertMI"
+                android:icon="@drawable/ic_notifications_black_24dp"
+                android:title="@string/alert_navigation_menu_item" />
+
+            <item
+                android:id="@+id/advertisingMI"
+                android:icon="@drawable/ic_shopping_cart_black_24dp"
+                android:title="@string/advertising_navigation_menu_item" />
+
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/settingMI"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="@string/settings_navigation_menu_item" />
+
+
+</menu>
